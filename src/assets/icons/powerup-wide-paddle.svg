@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Outer Badge Border -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="3" />
+  
+  <!-- Inner Contrast Frame -->
+  <rect x="7" y="7" width="50" height="50" rx="13" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" />
+
+  <!-- Double-Headed Arrow (Arcade Expansion Glyph) -->
+  <!-- Main Bar -->
+  <rect x="18" y="28" width="28" height="8" fill="#FFFFFF" rx="2" />
+
+  <!-- Left Arrowhead -->
+  <path d="M 22 20 L 10 32 L 22 44 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Right Arrowhead -->
+  <path d="M 42 20 L 54 32 L 42 44 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" />
+</svg>

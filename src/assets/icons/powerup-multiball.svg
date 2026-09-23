@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Outer Rounded Square Badge Frame -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="3" />
+  
+  <!-- Splitting Arrows / Burst Paths -->
+  <path d="M 32 36 L 20 20" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  <path d="M 32 36 L 32 16" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  <path d="M 32 36 L 44 20" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Main Ball (Bottom Center) -->
+  <circle cx="32" cy="42" r="7" fill="#FFFFFF" />
+
+  <!-- Split Ball 1 (Top Left) -->
+  <circle cx="18" cy="18" r="5" fill="#FFFFFF" />
+
+  <!-- Split Ball 2 (Top Center) -->
+  <circle cx="32" cy="14" r="5" fill="#FFFFFF" />
+
+  <!-- Split Ball 3 (Top Right) -->
+  <circle cx="46" cy="18" r="5" fill="#FFFFFF" />
+</svg>

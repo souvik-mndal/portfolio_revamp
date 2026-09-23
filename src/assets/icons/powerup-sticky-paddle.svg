@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Outer Rounded Square Badge Frame -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="3" />
+  
+  <!-- Centered Magnet Arc -->
+  <path d="M 18 42 V 26 A 14 14 0 0 1 46 26 V 42 H 38 V 26 A 6 6 0 0 0 26 26 V 42 Z" fill="#FFFFFF" />
+
+  <!-- Magnet Pole Tips (Black Accent Lines) -->
+  <rect x="18" y="35" width="8" height="3" fill="#1A1A1A" />
+  <rect x="38" y="35" width="8" height="3" fill="#1A1A1A" />
+</svg>

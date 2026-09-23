@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Outer Rounded Square Badge Frame -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="3" />
+  
+  <!-- Outer Explosion Starburst -->
+  <path d="M 32 10 L 36 22 L 48 16 L 42 28 L 54 32 L 42 36 L 48 48 L 36 42 L 32 54 L 28 42 L 16 48 L 22 36 L 10 32 L 22 28 L 16 16 L 28 22 Z" fill="#FFFFFF" />
+
+  <!-- Inner Black Core / Bomb Outline -->
+  <circle cx="32" cy="32" r="10" fill="#1A1A1A" />
+
+  <!-- Bomb Spark/Fuse Detail -->
+  <circle cx="32" cy="32" r="6" fill="#FFFFFF" />
+</svg>

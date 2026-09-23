@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Outer Rounded Square Badge Frame -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="3" />
+  
+  <!-- Left Cannon Barrel & Laser Blast -->
+  <rect x="18" y="26" width="6" height="18" rx="2" fill="#FFFFFF" />
+  <path d="M 21 12 L 25 22 L 17 22 Z" fill="#FFFFFF" />
+
+  <!-- Right Cannon Barrel & Laser Blast -->
+  <rect x="40" y="26" width="6" height="18" rx="2" fill="#FFFFFF" />
+  <path d="M 43 12 L 47 22 L 39 22 Z" fill="#FFFFFF" />
+
+  <!-- Connecting Paddle Base -->
+  <rect x="14" y="40" width="36" height="6" rx="2" fill="#FFFFFF" />
+</svg>
