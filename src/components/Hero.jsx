@@ -7,11 +7,8 @@ const Hero = () => {
   const { revealed } = useLoader()
 
   return (
-    <div className='w-screen h-screen bg-red-300'>
-      <span
-        className={`inline-block transition-all duration-1000 ease-out delay-200 motion-reduce:transition-none ${
-          revealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+    <div className='w-screen h-screen bg-black text-white flex justify-center items-center flex-col'>
+      <span className='text-7xl'
       >
         Hero
       </span>
