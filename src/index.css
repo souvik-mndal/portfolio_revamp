@@ -1,6 +1,37 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: 'Hardbop-Black';
+  src: url('./fonts/Hardbop-Black.otf') format('opentype');
+  font-weight: 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "KH Teka";
+  src: url("./fonts/KHTeka-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --breakpoint-3xl: 1921px;
-  --breakpoint-4xl: 2561px;
+  --breakpoint-3xl: 120.0625rem;
+  --breakpoint-4xl: 160.0625rem;
+  --font-teka: "KH Teka";
+}
+
+
+html[data-loader="loading"],
+html[data-loader="loading"] body {
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 75s linear infinite;
 }
