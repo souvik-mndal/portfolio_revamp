@@ -6175,7 +6175,7 @@ function Overlay({ contentRef, assets, minDuration, timeout, onReady }) {
               />
             </svg>
           </div>
-          <div
+          {/* <div
             className="
               fixed bottom-[4vw] right-[4vw]
               sm:bottom-[0vw] sm:right-[3vw]
@@ -6198,11 +6198,10 @@ function Overlay({ contentRef, assets, minDuration, timeout, onReady }) {
                  
               "
             >
-              {/* {percent} */}
               {String(percent).padStart(2, '0')}
             </span>
             
-          </div>
+          </div> */}
           <div
             className="
               fixed top-0 bottom-0 right-0
