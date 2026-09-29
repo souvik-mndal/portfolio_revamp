@@ -28,10 +28,19 @@ html[data-loader="loading"] body {
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
-  animation: marquee 75s linear infinite;
+  animation: marquee 50s linear infinite; /* Adjusted speed for smoother infinite flow */
+}
+
+
+::-webkit-scrollbar {
+  display: none;
 }

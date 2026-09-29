@@ -198,42 +198,7 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import AsciiHands from "./AsciiHands";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -345,42 +310,6 @@ export default function Footer() {
   }, []);
 
   return (
-    // <footer
-    //   ref={footerRef}
-    //   id="site-footer"
-    //   className="sticky bottom-0 z-0 h-[80vh] overflow-hidden bg-[#f5f5dc] text-[#121212] flex flex-col justify-between"
-    //   style={{ willChange: "filter" }}
-    // >
-    //   <div className="flex-1 flex items-center px-8 md:px-16">
-    //     <div className="max-w-3xl">
-    //       <p className="uppercase tracking-wide text-sm mb-6">
-    //         Let's build something
-    //       </p>
-    //       <h2 className="text-4xl md:text-6xl leading-tight font-serif italic mb-8">
-    //         Got a project in mind?
-    //         <br />
-    //         We'd love to hear about it.
-    //       </h2>
-    //
-    //         href="#"
-    //         className="inline-flex items-center justify-center w-32 h-32 rounded-full border border-white/70 text-sm tracking-wide  transition-colors duration-300"
-    //       >
-    //         [ Let's talk ]
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   <div className="select-none overflow-hidden leading-none">
-    //     <div className="whitespace-nowrap font-black text-[18vw] md:text-[14vw] tracking-tight -mb-4">
-    //       NEUTOMNI
-    //     </div>
-    //   </div>
-
-    //   <div className="flex justify-between items-center px-8 md:px-16 py-6 text-xs border-t border-white/10">
-    //     <span>&copy; 2026 Neutomni</span>
-    //     <span>Kolkata · Remote</span>
-    //   </div>
-    // </footer>
     <footer
       ref={footerRef}
       id="site-footer"
@@ -414,7 +343,7 @@ export default function Footer() {
           <a
             ref={emailRef}
             href="mailto:souvkmndal@gmail.com"
-            className="text-[4vw] sm:text-[3vw] lg:text-[2vw] underline underline-offset-[.5vw] decoration-[.02vw] hover:text-[#8a8a85] transition-colors leading-none inline-block whitespace-nowrap"
+            className="text-[4vw] sm:text-[3vw] lg:text-[1.6vw] underline underline-offset-[.5vw] decoration-[.02vw] hover:text-[#8a8a85] transition-colors leading-none inline-block whitespace-nowrap"
             style={{ clipPath: "inset(0 100% 0 0)" }}
           >
             souvkmndal@gmail.com
@@ -425,7 +354,7 @@ export default function Footer() {
         <div className="flex items-start lg:items-center lg:justify-end">
           <div
             ref={socialsRef}
-            className="flex flex-col text-[3vw] sm:text-[2vw] lg:text-[1.4vw] text-left overflow-hidden"
+            className="flex flex-col text-[3vw] sm:text-[2vw] lg:text-[1.6vw] text-left overflow-hidden"
             style={{ clipPath: "inset(0 100% 0 0)" }}
           >
             {["Linkedin", "Github", "Twitter"].map((social, index) => (
@@ -440,14 +369,14 @@ export default function Footer() {
                       className="relative inline-block overflow-hidden"
                     >
                       <span
-                        className="block transition-transform duration-500 group-hover:-translate-y-full"
-                        style={{ transitionDelay: `${i * 50}ms` }}
+                        className="block transition-transform duration-450 group-hover:-translate-y-full"
+                        style={{ transitionDelay: `${i * 25}ms` }}
                       >
                         {letter}
                       </span>
                       <span
-                        className="block absolute left-0 top-full transition-transform duration-500 group-hover:-translate-y-full"
-                        style={{ transitionDelay: `${i * 50}ms` }}
+                        className="block absolute left-0 top-full transition-transform duration-450 group-hover:-translate-y-full"
+                        style={{ transitionDelay: `${i * 25}ms` }}
                       >
                         {letter}
                       </span>
@@ -460,74 +389,42 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="absolute bottom-[30vh] left-0 w-full px-[2vw] h-[50vh] bg-red-400 z-[0]">
-        
+      <div className="absolute bottom-[30vh] left-0 w-full h-[50vh] z-[0] flex items-center justify-center overflow-hidden">
+        <AsciiHands />
       </div>
 
       {/* Marquee — still in normal flow, sits at its natural resting spot,
-      layered ABOVE the red section wherever they visually overlap */}
+ layered ABOVE the red section wherever they visually overlap */}
       <div
         ref={marqueeWrapperRef}
-        className="mt-auto w-full overflow-x-hidden overflow-y-hidden h-[25vw] z-[10] relative "
+        className="mt-auto w-full overflow-hidden h-[25vw] z-[10] relative pointer-events-none"
       >
-        <div className="flex w-max animate-marquee whitespace-nowrap ">
-          {[...Array(2)].map((_, i) => (
-            <div
-              key={i}
-              className="flex items-center shrink-0"
-              aria-hidden={i === 1}
-            >
-              {[...Array(4)].map((_, j) => (
-                <span
-                  key={j}
-                  className="text-[260px] sm:text-[325px] lg:text-[30vw] font-[400] tracking-tighter leading-none mr-[12.5vw] 2xl:mr-[10vw] select-none"
-                >
-                  Get in touch
-                </span>
-              ))}
-            </div>
-          ))}
+        <div className="flex w-max animate-marquee whitespace-nowrap">
+          {/* Group 1 */}
+          <div className="flex items-center shrink-0">
+            {[...Array(4)].map((_, j) => (
+              <span
+                key={`group1-${j}`}
+                className="text-[260px] sm:text-[325px] lg:text-[30vw] font-[400] tracking-tighter leading-none mr-[12.5vw] 2xl:mr-[10vw] select-none "
+              >
+                Get in touch
+              </span>
+            ))}
+          </div>
+
+          {/* Group 2 (Exact duplicate for seamless looping) */}
+          <div className="flex items-center shrink-0" aria-hidden="true">
+            {[...Array(4)].map((_, j) => (
+              <span
+                key={`group2-${j}`}
+                className="text-[260px] sm:text-[325px] lg:text-[30vw] font-[400] tracking-tighter leading-none mr-[12.5vw] 2xl:mr-[10vw] select-none bg-red-[#8a8a85] "
+              >
+                Get in touch
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
