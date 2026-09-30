@@ -4,7 +4,7 @@ import React from 'react'
 const Hero = () => {
 
   return (
-    <div className=' h-screen bg-[#121212] text-[#f5f5dc] flex justify-center items-center border border-white'>
+    <div className=' h-screen bg-[#121212] text-[#f5f5dc] flex justify-center items-center '>
       <span className='text-[20vw] font-[400] font-teka'
       >
         Data

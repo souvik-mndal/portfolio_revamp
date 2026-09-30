@@ -1,101 +1,3 @@
-// import { Routes, Route } from "react-router-dom";
-// import NotFound404 from "./pages/NotFound404";
-// import Hero from "./components/Hero";
-// import Loader from "./components/Loader";
-
-// function App() {
-//   return (
-//     <Routes>
-//       <Route
-//         path="/"
-//         element={
-//           <Loader minDuration={4500}>
-//             <Hero />
-//             {/* Rest of your website sections */}
-//           </Loader>
-//         }
-//       />
-//       <Route path="*" element={<NotFound404 />} />
-//     </Routes>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { Routes, Route } from "react-router-dom";
-// import NotFound404 from "./pages/NotFound404";
-// import Hero from "./components/Hero";
-// import Loader from "./components/Loader";
-// import { LenisProvider } from "./hooks/useLenis";
-
-// function App() {
-//   return (
-//     <LenisProvider>
-//       <Routes>
-//         <Route
-//           path="/"
-//           element={
-//             <Loader minDuration={4500}>
-//               <Hero />
-//               {/* <Hero /> */}
-//               {/* Rest of your website sections */}
-//             </Loader>
-//           }
-//         />
-//         <Route path="*" element={<NotFound404 />} />
-//       </Routes>
-//     </LenisProvider>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { Routes, Route } from "react-router-dom";
 import NotFound404 from "./pages/NotFound404";
 import Hero from "./components/Hero";
@@ -104,6 +6,7 @@ import { LenisProvider } from "./hooks/useLenis";
 
 import Footer from "./components/Footer";
 import PageWrap from "./components/PageWrap";
+import ProjectShowcase from "./components/ProjectShowcase";
 
 function App() {
   return (
@@ -121,6 +24,7 @@ function App() {
               */}
               <PageWrap>
                 <Hero />
+                <ProjectShowcase />
                 {/* Rest of your website sections go here too */}
               </PageWrap>
               <Footer />

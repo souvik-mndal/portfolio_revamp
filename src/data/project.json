@@ -1,0 +1,170 @@
+[
+  {
+    "id": "project-01",
+    "meta": {
+      "counter": "PROJECT 1 / 8",
+      "context": "Open Source Initiative",
+      "techStack": "React / WebGL / Three.js / GSAP",
+      "role": "Frontend Architect",
+      "status": "2026 Production",
+      "interactionHint": "View live experiment"
+    },
+    "hero": {
+      "title": "NEURAL CANVAS",
+      "subtitle": "Generative Shader Network",
+      "oneLiner": "An interactive real-time art installation powered by user input."
+    },
+    "visualMedia": {
+      "type": "video_mp4",
+      "url": "https://picsum.photos/1200/800?random=1",
+      "alt": "Real-time generative WebGL art visualization."
+    }
+  },
+  {
+    "id": "project-02",
+    "meta": {
+      "counter": "PROJECT 2 / 8",
+      "context": "FinTech Startup Case Study",
+      "techStack": "Rust / GraphQL / Postgres / AWS",
+      "role": "Backend Lead",
+      "status": "2025 Beta Release",
+      "interactionHint": "Read architectural breakdown"
+    },
+    "hero": {
+      "title": "QUANTUM LEDGER",
+      "subtitle": "Distributed Transaction Engine",
+      "oneLiner": "Processing 50k+ transactions per second with microsecond latency."
+    },
+    "visualMedia": {
+      "type": "system_diagram",
+      "url": "https://picsum.photos/1200/800?random=2",
+      "alt": "Architecture diagram for high-throughput distributed transactions."
+    }
+  },
+  {
+    "id": "project-03",
+    "meta": {
+      "counter": "PROJECT 3 / 8",
+      "context": "Freelance Client Work",
+      "techStack": "SvelteKit / Tailwind / Framer Motion",
+      "role": "UI/UX Developer",
+      "status": "2026 Completed",
+      "interactionHint": "View client testimonial & site"
+    },
+    "hero": {
+      "title": "KINETIC ARCHIVE",
+      "subtitle": "Digital Museum Experience",
+      "oneLiner": "A highly immersive motion-driven interface for navigating historical data."
+    },
+    "visualMedia": {
+      "type": "device_mockup",
+      "url": "https://picsum.photos/1200/800?random=3",
+      "alt": "Desktop screen displaying the fluid Kinetic Archive interface."
+    }
+  },
+  {
+    "id": "project-04",
+    "meta": {
+      "counter": "PROJECT 4 / 8",
+      "context": "Hackathon Winning Entry",
+      "techStack": "Python / TensorFlow / Next.js / OpenAI API",
+      "role": "Full-Stack AI Developer",
+      "status": "2025 Project Code",
+      "interactionHint": "Try the interactive AI tool"
+    },
+    "hero": {
+      "title": "SYNTHETIC VOICE",
+      "subtitle": "Multilingual Narrative Synthesis",
+      "oneLiner": "AI-powered tool converting text into synchronized audio stories."
+    },
+    "visualMedia": {
+      "type": "split_preview",
+      "url": "https://picsum.photos/1200/800?random=4",
+      "alt": "Screenshot of the text input area alongside the generated audio waveform."
+    }
+  },
+  {
+    "id": "project-05",
+    "meta": {
+      "counter": "PROJECT 5 / 8",
+      "context": "R&D Prototype",
+      "techStack": "C++ / WebAssembly / Node.js",
+      "role": "Core Performance Engineer",
+      "status": "2026 Active Prototype",
+      "interactionHint": "Read technical white paper"
+    },
+    "hero": {
+      "title": "ATOMIC RENDER",
+      "subtitle": "Wasm-Optimized Path Tracer",
+      "oneLiner": "Real-time global illumination running directly in the browser."
+    },
+    "visualMedia": {
+      "type": "video_mp4",
+      "url": "https://picsum.photos/1200/800?random=5",
+      "alt": "A video clip showing live path-tracing visualization."
+    }
+  },
+  {
+    "id": "project-06",
+    "meta": {
+      "counter": "PROJECT 6 / 8",
+      "context": "Internal Tools Development",
+      "techStack": "TypeScript / Electron / Redis / Go",
+      "role": "Desktop Application Lead",
+      "status": "2025 Production",
+      "interactionHint": "Download application binary"
+    },
+    "hero": {
+      "title": "DEVFLOW COMMAND",
+      "subtitle": "Unified Developer Operations Hub",
+      "oneLiner": "A single pane of glass for local testing and deployment workflows."
+    },
+    "visualMedia": {
+      "type": "application_screenshot",
+      "url": "https://picsum.photos/1200/800?random=6",
+      "alt": "A screen showing the dark-mode DevFlow desktop application UI."
+    }
+  },
+  {
+    "id": "project-07",
+    "meta": {
+      "counter": "PROJECT 7 / 8",
+      "context": "Creative Coding Experiment",
+      "techStack": "Web Audio API / WebSockets / Vue.js",
+      "role": "Interactive Audio Engineer",
+      "status": "2025 Completed",
+      "interactionHint": "Open interactive performance"
+    },
+    "hero": {
+      "title": "HARMONIC GRID",
+      "subtitle": "Spatial Audio Sequencer",
+      "oneLiner": "Collaborative real-time synthesizer based on grid movement."
+    },
+    "visualMedia": {
+      "type": "interactive_gif",
+      "url": "https://picsum.photos/1200/800?random=7",
+      "alt": "An animated GIF showing points pulsing on a grid creating light and sound."
+    }
+  },
+  {
+    "id": "project-08",
+    "meta": {
+      "counter": "PROJECT 8 / 8",
+      "context": "SaaS Platform Module",
+      "techStack": "Docker / Kubernetes / React / Node.js",
+      "role": "DevOps / Full Stack Developer",
+      "status": "2026 Deployed",
+      "interactionHint": "View live production system"
+    },
+    "hero": {
+      "title": "MESH OBSERVABILITY",
+      "subtitle": "Microservices Monitoring Dashboard",
+      "oneLiner": "Real-time metrics visualization and dependency mapping."
+    },
+    "visualMedia": {
+      "type": "video_mp4",
+      "url": "https://picsum.photos/1200/800?random=8",
+      "alt": "A dynamic video clip of a dashboard showing microservice health."
+    }
+  }
+]

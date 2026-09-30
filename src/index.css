@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Hardbop-Black';
@@ -19,6 +19,8 @@
   --breakpoint-3xl: 120.0625rem;
   --breakpoint-4xl: 160.0625rem;
   --font-teka: "KH Teka";
+  --font-sans: 'Inter', sans-serif;
+  --font-bebas: 'Bebas Neue', 'Impact', sans-serif;
 }
 
 
