@@ -7,6 +7,7 @@ import { LenisProvider } from "./hooks/useLenis";
 import Footer from "./components/Footer";
 import PageWrap from "./components/PageWrap";
 import ProjectShowcase from "./components/ProjectShowcase";
+import CircleGallery from "./components/CircleGallery";
 
 function App() {
   return (
@@ -23,11 +24,12 @@ function App() {
                 child in the scrolling document to work.
               */}
               <PageWrap>
-                <Hero />
-                <ProjectShowcase />
+                {/* <Hero /> */}
+                {/* <ProjectShowcase /> */}
+                <CircleGallery />
                 {/* Rest of your website sections go here too */}
               </PageWrap>
-              <Footer />
+              {/* <Footer /> */}
             </Loader>
           }
         />
