@@ -4822,7 +4822,7 @@ function ProjectShowcase({
   const grow = (on) => {
     hoverRef.current = on;
     if (dotRef.current) {
-      gsap.to(dotRef.current, { scale: on ? 1 : 0, duration: 0.45, ease: "power3.out", overwrite: "auto" });
+      gsap.to(dotRef.current, { scale: on ? 1.05 : 0, duration: 0.5, ease: "power3.out", overwrite: "auto" , border:"2px solid #f5f5dc", backgroundColor:"transparent" });
     }
   };
 
@@ -4865,11 +4865,11 @@ function ProjectShowcase({
       </div>
 
       {/* Right rail */}
-      {/* <aside
-        className="absolute top-0 z-20 flex h-full flex-col items-center justify-between"
-        style={{ right: "max(12px, 1.25vw)", paddingTop: "max(16px, 1.25vw)", paddingBottom: "max(16px, 1.25vw)" }}
+      <aside
+        className="absolute bottom-0 z-20 flex h-fit flex-col items-center justify-between "
+        style={{ right: "max(12px, 1.25vw)", paddingTop: "max(16px, 1.25vw)", paddingBottom: "0px" }}
       >
-        <svg
+        {/* <svg
           viewBox="0 0 22 26"
           fill="none"
           aria-hidden="true"
@@ -4885,9 +4885,9 @@ function ProjectShowcase({
               fill="currentColor"
             />
           ))}
-        </svg>
+        </svg> */}
 
-        <nav className="flex flex-col items-center" style={{ gap: "max(24px, 2.083vw)" }}>
+        {/* <nav className="flex flex-col items-center" style={{ gap: "max(24px, 2.083vw)" }}>
           {navItems.map((it) => (
             <a
               key={it.label}
@@ -4900,7 +4900,7 @@ function ProjectShowcase({
               {it.label}
             </a>
           ))}
-        </nav>
+        </nav> */}
 
         <div className="flex flex-col items-center" style={{ gap: "max(8px, 0.625vw)" }}>
           <span
@@ -4920,7 +4920,7 @@ function ProjectShowcase({
             />
           </div>
         </div>
-      </aside> */}
+      </aside> 
 
       {/* Cursor dot */}
       <div
