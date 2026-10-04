@@ -1,47 +1,67 @@
-import { Routes, Route } from "react-router-dom";
-import NotFound404 from "./pages/NotFound404";
-import Hero from "./components/Hero";
-import Loader from "./components/Loader";
-// import { LenisProvider } from "./hooks/useLenis";
 
-import Footer from "./components/Footer";
-import PageWrap from "./components/PageWrap";
-import ProjectShowcase from "./components/ProjectShowcase";
-import CircleGallery from "./components/CircleGallery";
+
+
+// import { Routes, Route } from "react-router-dom";
+// import { LenisProvider, useLenisInstance } from "./hooks/useLenis";
+// import TestTearTransition from "./components/TestTearTransition";
+// import ProjectShowcase from "./components/ProjectShowcase";
+// import CircleGallery from "./components/CircleGallery";
+// import NotFound404 from "./pages/NotFound404";
+// import Loader from "./components/Loader";
+// import PageWrap from "./components/PageWrap";
+
+// function Home() {
+//   const lenis = useLenisInstance();
+//   return (
+//     <Loader minDuration={4500}>
+//       <PageWrap>
+//         {/* <Hero /> */}
+//         <ProjectShowcase lenis={lenis} />
+//         <CircleGallery />
+//         {/* <TestTearTransition /> */}
+//       </PageWrap>
+//       {/* <Footer /> */}
+//     </Loader>
+//   );
+// }
 
 // function App() {
-//   const lenis = useLenisInstance();
 //   return (
 //     <LenisProvider>
 //       <Routes>
-//         <Route
-//           path="/"
-//           element={
-//             <Loader minDuration={4500}>
-//               {/*
-//                 IMPORTANT: with the sticky approach, Footer must be a
-//                 normal sibling AFTER PageWrap, both in the same flow —
-//                 NOT positioned fixed/outside. Sticky needs to be a real
-//                 child in the scrolling document to work.
-//               */}
-//               <PageWrap>
-//                 {/* <Hero /> */}
-//                 <ProjectShowcase lenis={lenis} />
-//                 {/* <CircleGallery /> */}
-//                 {/* Rest of your website sections go here too */}
-//               </PageWrap>
-//               {/* <Footer /> */}
-//             </Loader>
-//           }
-//         />
+//         <Route path="/" element={<Home />} />
 //         <Route path="*" element={<NotFound404 />} />
 //       </Routes>
 //     </LenisProvider>
 //   );
 // }
 
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+import { Routes, Route } from "react-router-dom";
 
 import { LenisProvider, useLenisInstance } from "./hooks/useLenis";
+import TearTransition from "./components/TearTransition";
+import ProjectShowcase from "./components/ProjectShowcase";
+import CircleGallery from "./components/CircleGallery";
+
+// ↓ KEEP YOUR EXISTING IMPORT LINES FOR THESE (paths unknown to me)
+import Loader from "./components/Loader";
+import PageWrap from "./components/PageWrap";
+import NotFound404 from "./pages/NotFound404";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 function Home() {
   const lenis = useLenisInstance();
@@ -49,8 +69,10 @@ function Home() {
     <Loader minDuration={4500}>
       <PageWrap>
         <Hero />
-        <ProjectShowcase lenis={lenis} />
-        <CircleGallery />
+        <TearTransition
+          from={<ProjectShowcase lenis={lenis} />}
+          to={<CircleGallery />}
+        />
       </PageWrap>
       <Footer />
     </Loader>
@@ -69,3 +91,38 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+// import { LenisProvider, useLenisInstance } from "./hooks/useLenis";
+// import TestTearTransition from "./components/TestTearTransition";
+
+// function Home() {
+//   const lenis = useLenisInstance();
+//   return (
+//     <Loader minDuration={4500}>
+//       <TestTearTransition />
+//     </Loader>
+//   );
+// }
+
+// function App() {
+//   return (
+//     <LenisProvider>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="*" element={<NotFound404 />} />
+//       </Routes>
+//     </LenisProvider>
+//   );
+// }
+
+// export default App;

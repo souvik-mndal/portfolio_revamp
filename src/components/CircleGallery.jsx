@@ -567,9 +567,13 @@ export default function CircleGallery() {
   }, []);
 
   return (
+//     <div
+//       ref={scrollWrapRef}
+//       className="scroll-wrap relative h-[500vh] w-full bg-[##F5F5DC] border border-white font-teka text-[#121212]"
+//     >
     <div
-      ref={scrollWrapRef}
-      className="scroll-wrap relative h-[500vh] w-full bg-[##F5F5DC] border border-white font-teka text-[#121212]"
+      ref={scrollWrapRef} 
+      className="scroll-wrap relative h-[500vh] w-full bg-[#F5f5dc] font-teka text-[#121212]"
     >
       <section
         ref={pinRef}

@@ -4389,7 +4389,9 @@ function ProjectShowcase({
       const inst = l && l.current !== undefined ? l.current : l;
       return inst && typeof inst.stop === "function" ? inst : null;
     };
-    const startY = () => root.getBoundingClientRect().top + window.scrollY;
+    // const startY = () => root.getBoundingClientRect().top + window.scrollY;
+    const anchorEl = root.closest("[data-tear-anchor]") || root;
+    const startY = () => anchorEl.getBoundingClientRect().top + window.scrollY;
 
     const engage = (side) => {
       if (active) return;

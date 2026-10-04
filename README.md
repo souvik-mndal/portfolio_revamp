@@ -14,3 +14,20 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
+
+
+
+
+change the project titles and at 8 projects as the gallery holds 8 images 
+
+about section same as the insta save whre there is a torch light movement on scroll , that bluish design 
+
+think to add some sections after the circle gallery 
+
+left with hero , about , other routes , project per page , techinical skills after circle gallery ...
+
+MOST IMPORTANT TO OPTIMISIZE EVERYTHING 

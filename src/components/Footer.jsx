@@ -417,7 +417,7 @@ export default function Footer() {
             {[...Array(4)].map((_, j) => (
               <span
                 key={`group2-${j}`}
-                className="text-[260px] sm:text-[325px] lg:text-[30vw] font-[400] tracking-tighter leading-none mr-[12.5vw] 2xl:mr-[10vw] select-none bg-red-[#8a8a85] "
+                className="text-[260px] sm:text-[325px] lg:text-[30vw] font-[400] tracking-tighter leading-none mr-[12.5vw] 2xl:mr-[10vw] select-none  "
               >
                 Get in touch
               </span>
