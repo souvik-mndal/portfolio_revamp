@@ -3697,54 +3697,128 @@ import gsap from "gsap";
 /* ------------------------------------------------------------------ */
 const DEFAULT_PROJECTS = [
   {
-    title: ["TIDAL", "ATLAS"],
-    client: "Northwind",
+    title: ["PROJECT", "ONE"],
+    name: "Northwind",
     type: "Websites",
-    agency: "Studio Ono",
-    date: "March 2025",
+    stack: "React / GSAP",
+    status: "live - 2025",
     href: "#",
+    image:"https://picsum.photos/id/10/600/400",
   },
   {
-    title: ["PAPER", "ORBIT"],
-    client: "Halden\nMuseum",
+    title: ["PROJECT", "TWO"],
+    name: "Halden\nMuseum",
     type: "Installations",
-    agency: "In-house",
-    date: "July 2024",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
     href: "#",
+    image:"https://picsum.photos/id/20/600/400",
   },
   {
-    title: ["WORLD", "MAKER", { text: "β version", indent: 0.05, size: 0.88, lower: true }],
-    client: "Kite Games",
-    type: "Websites",
-    agency: "Fieldwork",
-    date: "September 2023",
+    title: ["PROJECT", "THREE"],
+    name: "Halden\nMuseum",
+    type: "Installations",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
     href: "#",
+    image:"https://picsum.photos/id/30/600/400",
   },
   {
-    title: ["LOW", "TIDE"],
-    client: "Meridian Bank",
-    type: "Apps",
-    agency: "Brightside",
-    date: "May 2022",
+    title: ["PROJECT", "FOUR"],
+    name: "Halden\nMuseum",
+    type: "Installations",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
     href: "#",
+    image:"https://picsum.photos/id/40/600/400",
   },
   {
-    title: ["KAJIMA", "DX", "LABO"],
-    subtitle: "A birds-eye glimpse of the entire Naruse Dam",
-    client: "Kajima\nCorporation",
-    type: "Websites / XR",
-    agency: "Pylon\nStudio",
-    date: "December 2021",
+    title: ["PROJECT", "FIVE"],
+    name: "Halden\nMuseum",
+    type: "Installations",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
     href: "#",
+    image:"https://picsum.photos/id/50/600/400",
   },
   {
-    title: ["AFTER", "IMAGE"],
-    client: "Oku Watches",
-    type: "Websites",
-    agency: "Cherry & Co",
-    date: "August 2020",
+    title: ["PROJECT", "SIX"],
+    name: "Halden\nMuseum",
+    type: "Installations",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
     href: "#",
+    image:"https://picsum.photos/id/60/600/400",
   },
+  {
+    title: ["PROJECT", "SEVEN"],
+    name: "Halden\nMuseum",
+    type: "Installations",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
+    href: "#",
+    image:"https://picsum.photos/id/70/600/400",
+  },
+  {
+    title: ["PROJECT", "EIGHT"],
+    name: "Halden\nMuseum",
+    type: "Installations",
+    stack: "TypeScript\nChrome APIs",
+    status: "open source - 2024",
+    href: "#",
+    image:"https://picsum.photos/id/80/600/400",
+  },
+  // {
+  //   // title: ["PROJECT", "THREE", { text: "β version", indent: .05, size: 0.88, lower: true }],
+  //   title: ["PROJECT", "THREE", ],
+  //   client: "Kite Games",
+  //   type: "Websites",
+  //   agency: "Fieldwork",
+  //   date: "September 2023",
+  //   href: "#",
+  // },
+  // {
+  //   title: ["PROJECT", "FOUR"],
+  //   client: "Meridian Bank",
+  //   type: "Apps",
+  //   agency: "Brightside",
+  //   date: "May 2022",
+  //   href: "#",
+  // },
+  // {
+  //   title: ["PROJECT", "FIVE"],
+  //   // subtitle: "A birds-eye glimpse of the entire Naruse Dam",
+  //   subtitle: "",
+  //   client: "Kajima\nCorporation",
+  //   type: "Websites / XR",
+  //   agency: "Pylon\nStudio",
+  //   date: "December 2021",
+  //   href: "#",
+  // },
+  // {
+  //   title: ["PROJECT", "SIX"],
+  //   client: "Oku Watches",
+  //   type: "Websites",
+  //   agency: "Cherry & Co",
+  //   date: "August 2020",
+  //   href: "#",
+  // },
+  // {
+  //   title: ["PROJECT", "SEVEN"],
+  //   client: "Oku Watches",
+  //   type: "Websites",
+  //   agency: "Cherry & Co",
+  //   date: "August 2020",
+  //   href: "#",
+  // },
+  // {
+  //   title: ["PROJECT", "EIGHT"],
+  //   client: "Oku Watches",
+  //   type: "Websites",
+  //   agency: "Cherry & Co",
+  //   date: "August 2020",
+  //   href: "#",
+  // },
 ];
 
 const DEFAULT_NAV = [
@@ -3762,7 +3836,8 @@ const hexToVec3 = (hex) => {
 };
 
 const TITLE_FONT = "'Oswald','Arial Narrow',Impact,sans-serif";
-const PANEL_FONT = "'Padauk','Helvetica Neue',Arial,sans-serif";
+// const PANEL_FONT = "'KH Teke','inter','Padauk','Helvetica Neue',Arial,sans-serif";
+const PANEL_FONT = "'KH Teka'";
 const CHARSET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789[]#&%=-";
 
 /* info panel is drawn on a 512x700 (base units) canvas at O x */
@@ -3936,7 +4011,7 @@ function paintPanel(ctx, proj, idx, total, scr) {
   const T = (s) => (scr ? scrambled(s.length) : s);
   const label = (s) => {
     ctx.fillStyle = "rgb(90,90,90)";
-    ctx.font = `200 ${23 * O}px 'Oswald','Arial Narrow',sans-serif`;
+    ctx.font = `400 ${23 * O}px 'Oswald','Arial Narrow',sans-serif`;
     ctx.fillText(s, X, y);
   };
   const value = (s, weight, size) => {
@@ -3948,9 +4023,10 @@ function paintPanel(ctx, proj, idx, total, scr) {
 
   value(`WORKS ${idx + 1} / ${total}`, 700, 26);
   y += 64 * O;
-  label("CLIENT");
+  // label("CLIENT");
+  label("PROJECT");
   y += 46 * O;
-  splitLines(proj.client).forEach((l) => {
+  splitLines(proj.name).forEach((l) => {
     value(T(l), 700, 50);
     y += 48 * O;
   });
@@ -3959,17 +4035,17 @@ function paintPanel(ctx, proj, idx, total, scr) {
   y += 28 * O;
   value(T(proj.type || ""), 400, 24);
   y += 64 * O;
-  label("AGENCY");
+  label("STACK");
   y += 28 * O;
-  const ag = splitLines(proj.agency);
+  const ag = splitLines(proj.stack);
   ag.forEach((l, i) => {
     value(T(l), 400, 24);
     if (i < ag.length - 1) y += 32 * O;
   });
   y += 64 * O;
-  label("RELEASE DATE");
+  label("STATUS");
   y += 28 * O;
-  value(T(proj.date || ""), 400, 24);
+  value(T(proj.status || ""), 400, 24);
   return { yDate: y };
 }
 
@@ -3996,7 +4072,7 @@ function drawTitle(ctx, proj, W, H, sc) {
   lines.forEach((o, k) => {
     const size = fs * (o.size || 1);
     const indent = o.indent ?? (k > 0 ? 0.78 : 0);
-    ctx.font = `700 ${size}px ${TITLE_FONT}`;
+    ctx.font = `600 ${size}px ${TITLE_FONT}`;
     try {
       ctx.letterSpacing = `${-0.01 * size}px`;
     } catch (e) {}
@@ -4033,7 +4109,7 @@ function ProjectShowcase({
   touchGain = 5, // touch px -> delta (reference uses 5)
   stepScale = 1, // scroll distance per project (1 = reference)
   snapSpeed = 1, // speed of the pull (settle back / go to next). 1 = reference (0.05 per frame)
-  hint = ["To see more of this work,", "press the typography to the right."],
+  hint = ["To see more of this work,", "hover over the typography and click on the image."],
   onSelect, // (project, index) => void
 }) {
   const rootRef = useRef(null);
@@ -4070,6 +4146,7 @@ function ProjectShowcase({
           "italic 200 20px Oswald",
           "400 20px Padauk",
           "700 20px Padauk",
+          "400 20px 'KH Teka'",
         ].map((f) => document.fonts.load(f))
       )
         .then(markDirty)
@@ -4142,8 +4219,8 @@ function ProjectShowcase({
     const rects = Array.from({ length: 8 }, () => ({ x: 6 * O, y: 0, w: 0, h: 0 }));
     const startRects = () => {
       const proj = projects[idx];
-      const cl = Math.min(5, splitLines(proj.client).length);
-      const al = splitLines(proj.agency).length;
+      const cl = Math.min(5, splitLines(proj.name).length);
+      const al = splitLines(proj.stack).length;
       const extra = 32 * O * Math.max(al - 1, 0);
       rects.forEach((r) => {
         gsap.killTweensOf(r);
@@ -4819,12 +4896,19 @@ function ProjectShowcase({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n, intensity, wheelGain, touchGain, stepScale, snapSpeed, hintKey]);
 
-  const grow = (on) => {
-    hoverRef.current = on;
-    if (dotRef.current) {
-      gsap.to(dotRef.current, { scale: on ? 1.05 : 0, duration: 0.5, ease: "power3.out", overwrite: "auto" , border:"2px solid #f5f5dc", backgroundColor:"transparent" });
-    }
-  };
+  // const grow = (on) => {
+  //   hoverRef.current = on;
+  //   if (dotRef.current) {
+  //     gsap.to(dotRef.current, { scale: on ? 1.05 : 0, duration: 0.5, ease: "power3.out", overwrite: "auto" , border:"2px solid #f5f5dc", backgroundColor:"transparent" });
+  //   }
+  // };
+     const grow = (on, img) => {
+     hoverRef.current = on;
+     const dot = dotRef.current;
+     if (!dot) return;
+     if (on) dot.style.backgroundImage = img ? `url(${img})` : "none";
+     gsap.to(dot, { scale: on ? 1 : 0, duration: 0.45, ease: "power3.out", overwrite: "auto" });
+   };
 
   return (
     <section
@@ -4843,7 +4927,7 @@ function ProjectShowcase({
             .map((l) => (typeof l === "string" ? l : l.text))
             .join(" ");
           return (
-            <a
+            <a 
               key={p.id ?? i}
               ref={(el) => (linkRefs.current[i] = el)}
               href={p.href || "#"}
@@ -4853,12 +4937,13 @@ function ProjectShowcase({
                   onSelect(p, i);
                 } else if (!p.href) e.preventDefault();
               }}
-              onMouseEnter={() => grow(true)}
+              // onMouseEnter={() => grow(true)}
+                 onMouseEnter={() => grow(true, p.image)}
               onMouseLeave={() => grow(false)}
               className="pointer-events-none cursor-pointer absolute left-[8%] top-[22%] block h-[44%] w-[84%] md:left-[41%] md:top-[18%] md:h-[58%] md:w-[52%]"
               style={{ pointerEvents: i === 0 ? "auto" : "none" }}
             >
-              <span className="sr-only">{`${label}: view project`}</span>
+              <span className="sr-only border ">{`${label}: view project`}</span>
             </a>
           );
         })}
@@ -4926,7 +5011,8 @@ function ProjectShowcase({
       <div
         ref={dotRef}
         className="pointer-events-none absolute left-0 top-0 z-30 rounded-full [@media(pointer:coarse)]:hidden"
-        style={{ width: "12.8125vw", height: "12.8125vw", backgroundColor: COLOR_FG }} /* 246px at 1920px wide */
+        style={{ width: "14vw", height: "14vw", backgroundColor: COLOR_FG ,backgroundSize: "cover",
+  backgroundPosition: "center",border: "1px solid #F5F5DC", }} /* 269px at 1920px wide */
         aria-hidden="true"
       />
     </section>
