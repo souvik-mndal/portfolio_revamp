@@ -360,7 +360,7 @@ export default function Footer() {
             {["Linkedin", "Github", "Twitter"].map((social, index) => (
               <div
                 key={index}
-                className="group overflow-hidden cursor-pointer font-oswald"
+                className="group overflow-hidden cursor-pointer"
               >
                 <a href="#" className="relative inline-flex">
                   {social.split("").map((letter, i) => (
