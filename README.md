@@ -22,7 +22,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-change the project titles and at 8 projects as the gallery holds 8 images 
 
 about section same as the insta save whre there is a torch light movement on scroll , that bluish design 
 

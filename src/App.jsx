@@ -62,6 +62,7 @@ import PageWrap from "./components/PageWrap";
 import NotFound404 from "./pages/NotFound404";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import Statement from "./components/Statement";
 
 function Home() {
   const lenis = useLenisInstance();
@@ -69,6 +70,7 @@ function Home() {
     <Loader minDuration={4500}>
       <PageWrap>
         <Hero />
+        <Statement />
         <TearTransition
           from={<ProjectShowcase lenis={lenis} />}
           to={<CircleGallery />}
