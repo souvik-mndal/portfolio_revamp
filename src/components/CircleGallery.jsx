@@ -335,6 +335,7 @@ export default function CircleGallery() {
     if (!scrollWrap || !pinEl || !phraseEl) return;
 
     let triggerInstance = null;
+let bgTween = null;
     let isCancelled = false;
 
     const preloadImage = (url) => {
@@ -489,7 +490,12 @@ export default function CircleGallery() {
         start: "top top",
         end: "bottom bottom",
         pin: pinEl,
-        scrub: 1.8,
+//         scrub: 1.8,
+
+
+
+        scrub: 1.8,
+                
         onUpdate: (self) => {
           const progress = self.progress;
 
@@ -551,7 +557,23 @@ export default function CircleGallery() {
         },
       });
 
-      ScrollTrigger.refresh();
+//       ScrollTrigger.refresh();
+              bgTween = gsap.fromTo(
+        scrollWrap,
+        { backgroundColor: "#F5F5DC" },
+        {
+          backgroundColor: "#121212",
+          ease: "none",
+          scrollTrigger: {
+            trigger: scrollWrap,
+            start: "bottom bottom",
+            end: "bottom 90%",
+            scrub: true,
+          },
+        },
+      );
+
+      ScrollTrigger.refresh();
     };
 
     setupGallery();
@@ -562,7 +584,15 @@ export default function CircleGallery() {
     return () => {
       isCancelled = true;
       window.removeEventListener("resize", handleResize);
-      if (triggerInstance) triggerInstance.kill();
+//       if (triggerInstance) triggerInstance.kill();
+
+
+              if (triggerInstance) triggerInstance.kill();
+    //   gsap.killTweensOf(scrollWrap);
+          if (bgTween) {
+        bgTween.scrollTrigger?.kill();
+        bgTween.kill();
+      }
     };
   }, []);
 

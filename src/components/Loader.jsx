@@ -673,12 +673,10 @@ function Overlay({ contentRef, assets, minDuration, timeout, onReady }) {
               
             "
           >
-            <span style={{
-              fontFamily: "Hardbop-Bold, sans-serif",
-            }}
-              className=" text-[#F5F5DC]
+            <span 
+              className=" text-[#F5F5DC] font-oswald
                  leading-none
-                 text-[40vw] sm:text-[28.5vw] md:text-[27.5vw] lg:text-[20vw] xl:text-[17.5vw] 2xl:text-[15vw]
+                 text-[40vw] sm:text-[28.5vw] md:text-[27.5vw] lg:text-[20vw] xl:text-[17.5vw] 2xl:text-[15vw] tracking-[-0.06em] font-[450]
                  
               "
             >

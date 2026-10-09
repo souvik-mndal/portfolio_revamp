@@ -63,6 +63,8 @@ import NotFound404 from "./pages/NotFound404";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Statement from "./components/Statement";
+import CoverReveal from "./components/CoverReveal";
+import Skillset from "./components/Skillset";
 
 function Home() {
   const lenis = useLenisInstance();
@@ -70,11 +72,21 @@ function Home() {
     <Loader minDuration={4500}>
       <PageWrap>
         <Hero />
-        <Statement />
+        {/* <Statement />
         <TearTransition
           from={<ProjectShowcase lenis={lenis} />}
           to={<CircleGallery />}
+        /> */}
+        <CoverReveal
+          under={<Statement />}
+          over={
+            <TearTransition
+              from={<ProjectShowcase lenis={lenis} />}
+              to={<CircleGallery />}
+            />
+          }
         />
+        <Skillset />
       </PageWrap>
       <Footer />
     </Loader>
