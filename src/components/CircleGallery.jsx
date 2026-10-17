@@ -627,8 +627,8 @@ let bgTween = null;
             className="cg-phrase m-0 text-center text-[clamp(2rem,4vw,3.5rem)] 2xl:text-[2.92vw] font-normal leading-[1.25] "
           >
             Each project is a chance <br /> to{" "}
-            <span className=" italic font-serif">learn</span>,{" "}
-            <span className="font-serif italic ">experiment</span> and <br />
+            <span className=" italic font-serif text-[#FF5A1F]">learn</span>,{" "}
+            <span className="font-serif italic text-[#FF5A1F]">experiment</span> and <br />
             push my limits.
           </p>
         </div>

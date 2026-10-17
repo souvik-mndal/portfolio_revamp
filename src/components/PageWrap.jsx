@@ -11,7 +11,8 @@ export default function PageWrap({ children }) {
   const wrapRef = useRef(null);
 
   return (
-    <div ref={wrapRef} className="relative z-10 bg-white">
+    // <div ref={wrapRef} className="relative z-10 bg-white">
+    <div ref={wrapRef} data-page-wrap className="relative z-10 bg-white">
       {children}
     </div>
   );

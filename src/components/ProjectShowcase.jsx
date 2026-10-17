@@ -5001,7 +5001,7 @@ function ProjectShowcase({
             <div
               ref={progressRef}
               className="absolute inset-0 origin-top"
-              style={{ transform: "scaleY(0)", backgroundColor: COLOR_FG }}
+              style={{ transform: "scaleY(0)", backgroundColor: '#FF5A1F' }}
             />
           </div>
         </div>

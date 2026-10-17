@@ -471,8 +471,10 @@ function escapeHtml(str) {
 // Scroll-in animation window, measured against the FOOTER's top edge.
 // "top 50%" = footer's top edge is halfway up the screen (animation starts)
 // "top 0%"  = footer's top edge reaches the very top   (animation finished)
-const SLIDE_START = "top 70%";
-const SLIDE_END = "top 0%";
+// const SLIDE_START = "top 70%";
+// const SLIDE_END = "top 0%";
+const SLIDE_START = "bottom 70%";
+const SLIDE_END = "bottom top";
 const SLIDE_EXTRA_PX = 80; // extra distance past the screen edge, so nothing peeks in (covers the +-30px mouse drift too)
 
 export default function AsciiHands() {
@@ -525,7 +527,8 @@ export default function AsciiHands() {
     if (!wrap || !leftSlide || !rightSlide) return;
 
     // Use the footer as the scroll trigger (falls back to the wrapper).
-    const trigger = wrap.closest("footer") || wrap;
+    // const trigger = wrap.closest("footer") || wrap;
+        const trigger = document.querySelector("[data-page-wrap]") || wrap;
 
     // Distance needed to push each hand fully past its screen edge.
     // getBoundingClientRect includes the current transform, so subtract
@@ -545,7 +548,10 @@ export default function AsciiHands() {
           trigger,
           start: SLIDE_START,
           end: SLIDE_END,
-          scrub: true,
+          // scrub: true,
+          // invalidateOnRefresh: true, // re-measure on resize
+                    scrub: true,
+          refreshPriority: -1,
           invalidateOnRefresh: true, // re-measure on resize
         },
       });

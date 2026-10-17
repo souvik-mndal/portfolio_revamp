@@ -65,18 +65,17 @@ import Footer from "./components/Footer";
 import Statement from "./components/Statement";
 import CoverReveal from "./components/CoverReveal";
 import Skillset from "./components/Skillset";
+import ScrollIndicator from "./components/ScrollIndicator";
+import { About } from "./components/About";
 
 function Home() {
   const lenis = useLenisInstance();
   return (
     <Loader minDuration={4500}>
       <PageWrap>
+        <ScrollIndicator />
         <Hero />
-        {/* <Statement />
-        <TearTransition
-          from={<ProjectShowcase lenis={lenis} />}
-          to={<CircleGallery />}
-        /> */}
+        <About />
         <CoverReveal
           under={<Statement />}
           over={
