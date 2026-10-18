@@ -560,9 +560,9 @@ let bgTween = null;
 //       ScrollTrigger.refresh();
               bgTween = gsap.fromTo(
         scrollWrap,
-        { backgroundColor: "#F5F5DC" },
+        { backgroundColor: "#F5F0E8" },
         {
-          backgroundColor: "#121212",
+          backgroundColor: "#1a1a1a",
           ease: "none",
           scrollTrigger: {
             trigger: scrollWrap,
@@ -597,13 +597,9 @@ let bgTween = null;
   }, []);
 
   return (
-//     <div
-//       ref={scrollWrapRef}
-//       className="scroll-wrap relative h-[500vh] w-full bg-[##F5F5DC] border border-white font-teka text-[#121212]"
-//     >
     <div
       ref={scrollWrapRef} 
-      className="scroll-wrap relative h-[500vh] w-full bg-[#F5f5dc] font-teka text-[#121212]"
+      className="scroll-wrap relative h-[500vh] w-full bg-[#F5F0E8] font-teka text-[#2b2b2be9]"
     >
       <section
         ref={pinRef}

@@ -138,7 +138,7 @@ export default function Footer() {
     <footer
       ref={footerRef}
       id="site-footer"
-      className="h-[100vh] sticky bottom-0 z-0 overflow-hidden bg-[#f5f5dc] text-[#121212] font-teka flex flex-col"
+      className="h-[100vh] sticky bottom-0 z-0 overflow-hidden bg-[#F5F0E8] text-[#2b2b2be9] font-teka flex flex-col"
       style={{ willChange: "filter" }}
     >
       {/* MIDDLE SECTION — 3 columns on desktop */}
@@ -155,7 +155,7 @@ export default function Footer() {
             </span>
             <span
               ref={headingLine2Ref}
-              className="text-[#121212] block overflow-hidden whitespace-nowrap"
+              className="text-[#2b2b2be9] block overflow-hidden whitespace-nowrap"
               style={{ clipPath: "inset(0 100% 0 0)" }}
             >
               what&apos;s next
@@ -222,7 +222,7 @@ export default function Footer() {
  layered ABOVE the red section wherever they visually overlap */}
       <div
         ref={marqueeWrapperRef}
-        className="mt-auto w-full overflow-hidden h-[25vw] z-[10] relative pointer-events-none"
+        className="mt-auto w-full overflow-hidden h-[25vw] z-[10] relative pointer-events-none text-[#1a1a1a]"
       >
         <div className="flex w-max animate-marquee whitespace-nowrap">
           {/* Group 1 */}
@@ -238,7 +238,7 @@ export default function Footer() {
           </div>
 
           {/* Group 2 (Exact duplicate for seamless looping) */}
-          <div className="flex items-center shrink-0" aria-hidden="true">
+          <div className="flex items-center shrink-0 " aria-hidden="true">
             {[...Array(4)].map((_, j) => (
               <span
                 key={`group2-${j}`}

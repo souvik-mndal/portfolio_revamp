@@ -66,7 +66,7 @@ import Statement from "./components/Statement";
 import CoverReveal from "./components/CoverReveal";
 import Skillset from "./components/Skillset";
 import ScrollIndicator from "./components/ScrollIndicator";
-import { About } from "./components/About";
+import About  from "./components/About";
 
 function Home() {
   const lenis = useLenisInstance();

@@ -140,7 +140,7 @@ export default function Skillset() {
   return (
     <section
       ref={root}
-      className="bg-[#121212] px-6 py-24 text-[#f5f5dc] md:px-10 md:py-44 font-teka"
+      className="bg-[#1a1a1a] px-6 py-24 text-[#F5F0E8] md:px-10 md:py-44 font-teka"
     >
       <div className="mx-auto w-full max-w-[1400px]">
         <div className="overflow-hidden pb-2">

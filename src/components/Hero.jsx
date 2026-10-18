@@ -235,13 +235,13 @@ export default function Hero() {
                       className="relative inline-block overflow-hidden"
                     >
                       <span
-                        className="block transition-transform duration-500 group-hover:-translate-y-full group-hover:text-[#f5f5dc]"
+                        className="block transition-transform duration-500 group-hover:-translate-y-full group-hover:text-[#F5F0E8]"
                         style={{ transitionDelay: `${i * 50}ms` }}
                       >
                         {letter}
                       </span>
                       <span
-                        className="block absolute left-0 top-full transition-transform duration-500 group-hover:-translate-y-full group-hover:text-[#f5f5dc]"
+                        className="block absolute left-0 top-full transition-transform duration-500 group-hover:-translate-y-full group-hover:text-[#F5F0E8]"
                         style={{ transitionDelay: `${i * 50}ms` }}
                       >
                         {letter}
@@ -265,7 +265,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-block font-teka tracking-widest text-white/50 text-[.9vw] leading-loose
-                hover:text-[#f5f5dc] transition-colors duration-300
+                hover:text-[#F5F0E8] transition-colors duration-300
                 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0
                 after:w-0 after:h-[.15vw] after:bg-[#FF5A1F] after:transition-all after:duration-300
                 hover:after:w-full uppercase"
@@ -283,7 +283,7 @@ export default function Hero() {
                   key={index}
                   href={social.href}
                   className="relative inline-block leading-loose tracking-widest 
-                    hover:text-[#f5f5dc] transition-colors duration-300
+                    hover:text-[#F5F0E8] transition-colors duration-300
                     after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0
                     after:w-0 after:h-[.15vw] after:bg-[#FF5A1F] after:transition-all after:duration-300
                     hover:after:w-full font-teka uppercase"
@@ -308,12 +308,12 @@ export default function Hero() {
             w-[3.45vw] h-[3.45vw]
             rounded-full cursor-pointer
             transition-colors duration-500 ease-in-out
-            ${menuActive ? "bg-[#f5f5dc]" : "bg-[#404040]"}
+            ${menuActive ? "bg-[#F5F0E8]" : "bg-[#404040]"}
           `}
         >
           <Hamburger
             toggled={menuActive}
-            color={menuActive ? "#121212" : "#f5f5dc"}
+            color={menuActive ? "#121212" : "#F5F0E8"}
             distance="sm"
             rounded
             duration={0.5}
