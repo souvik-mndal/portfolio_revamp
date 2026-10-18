@@ -151,7 +151,7 @@ export default function Hero() {
       <div
         id="page1"
         ref={pageRef}
-        className="h-[100vh] text-[#2b2b2be9] relative overflow-hidden backdrop-blur-[50px] bg-white/45"
+        className="h-[100vh] text-[#2b2b2be9] relative overflow-hidden backdrop-blur-[50px] 3xl:backdrop-blur-[75px] 4xl:backdrop-blur-[165px] bg-white/45"
       >
         <div
           className="relative h-[10%] w-full flex items-center"
