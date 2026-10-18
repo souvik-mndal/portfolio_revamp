@@ -155,7 +155,7 @@ export default function Statement() {
       const colorExit = {
         trigger: wrap,
         start: "top top",
-        end: "top top-=10%",
+        end: "top top-=5%",
         scrub: true,
       };
 
@@ -178,6 +178,13 @@ export default function Statement() {
       // 3a. Background + big text ("Compiled. Alive.") -> full beige
       gsap.to(root.current, {
         backgroundColor: "#1e1e1e",
+        color: BEIGE_FULL,
+        ease: "none",
+        scrollTrigger: { ...colorExit },
+      });
+
+            // 3c. Big text span has its own colour, so tween it directly
+      gsap.to("[data-big]", {
         color: BEIGE_FULL,
         ease: "none",
         scrollTrigger: { ...colorExit },
@@ -209,14 +216,15 @@ export default function Statement() {
             <span
               data-line
               data-soft
-              className="block text-[7.5vw] font-[600] md:text-[length:min(6.5vw,11vh)] tracking-tight"
+              className="block text-[7.5vw] font-[600] md:text-[length:min(6.5vw,11vh)] tracking-tight text-[#121212d9]"
             >
               Every idea, eventually,
             </span>
           </span>
 
           {/* Huge line: stacked on mobile, single line from md up */}
-          <span className="block overflow-hidden px-[0.05em] pb-[0.08em]">
+          {/* <span className="block overflow-hidden px-[0.05em] text-[#2b2b2b] pb-[0.08em] tracking-[-.4em]"> */}
+          <span data-big className="block overflow-hidden px-[0.05em] text-[#2b2b2b] pb-[0.08em] tracking-[-.4em]">
             <span
               data-line
               className="block text-[19vw] leading-[0.88] font-[600] md:text-[length:min(13vw,23vh)] md:whitespace-nowrap"
@@ -230,7 +238,7 @@ export default function Statement() {
 
         <p
           data-soft
-          className="mt-[5vh] max-w-[34ch] text-center text-[clamp(0.95rem,1.1vw,1.6rem)] leading-snug tracking-[-0.01em] font-teka font-[400]"
+          className="mt-[5vh] max-w-[34ch] text-center text-[clamp(0.95rem,1.1vw,1.6rem)] leading-snug tracking-[-0.01em] font-teka font-[400] text-[#121212d9]"
         >
           Some became models. Some became tools. All of them started as a question.
         </p>

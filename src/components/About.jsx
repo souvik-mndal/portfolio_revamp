@@ -73,9 +73,9 @@ const TiltCard = ({ cardRef, tiltRef }) => {
       <div ref={cardRef} className="w-full h-full">
         <div
           ref={tiltRef}
-          className="w-full h-full bg-[#F5F0E8] flex justify-center items-start"
+          className="w-full h-full bg-[#F5F0E8] flex flex-col justify-between items-center"
         >
-          <div className="w-[86%] h-[75%]" style={{ marginTop: "7.65%" }}>
+          <div className="w-[86%] h-[75%] border border-black" style={{ marginTop: "7.65%", marginBottom:"7.65%" }}>
             <img
               // src={flareHeadshot}
               className="h-full w-full object-cover"
@@ -83,7 +83,12 @@ const TiltCard = ({ cardRef, tiltRef }) => {
               loading="lazy"
             />
           </div>
+          <span className=" flex items-center gap-5 leading-none w-[86%] justify-end" style={{  marginBottom:"7%" }}>
+            <p className="text-[#2b2b2b] font-curs text-[2.75vw] leading-none">Souvik</p>
+            <p className="text-[#2b2b2b] font-curs text-[2.75vw]">Mondal</p>
+          </span>
         </div>
+        
       </div>
     </div>
   );
@@ -155,9 +160,9 @@ export default function About() {
     <div
       ref={wrapperRef}
       id="about"
-      className="relative h-[105vh] z-10"
+      className="relative h-[105vh] z-10 "
     >
-      <div ref={bottomRef} className="absolute inset-0 z-0 bg-[#F5F0E8]" />
+      <div ref={bottomRef} className="absolute inset-0 z-0 bg-[#F5f0e8]" />
 
       <div
         className="relative z-10 h-full bg-[#F5F0E8] text-[#2b2b2be9] flex flex-col justify-between"

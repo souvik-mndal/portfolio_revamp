@@ -259,12 +259,12 @@ export default function Hero() {
           className="flex justify-between text-white/50 flex-row "
         >
           <div className="font-light flex flex-col">
-            <p className="tracking-wide font-normal text-[.9vw] uppercase">E-mail</p>
+            <p className=" font-normal text-[.9vw] uppercase">E-mail</p>
             <a
               href="mailto:souvkmndal@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-block font-teka tracking-widest text-white/50 text-[.9vw] leading-loose
+              className="relative inline-block font-teka  text-white/50 text-[.9vw] leading-loose
                 hover:text-[#F5F0E8] transition-colors duration-300
                 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0
                 after:w-0 after:h-[.15vw] after:bg-[#FF5A1F] after:transition-all after:duration-300
@@ -274,7 +274,7 @@ export default function Hero() {
             </a>
           </div>
           <div className="font-light">
-            <p className="tracking-wide font-normal text-[.9vw] uppercase">
+            <p className=" font-normal text-[.9vw] uppercase">
               Social Media
             </p>
             <div className="flex flex-wrap flex-row gap-x-[1vw] text-[.9vw]">
@@ -282,7 +282,7 @@ export default function Hero() {
                 <a
                   key={index}
                   href={social.href}
-                  className="relative inline-block leading-loose tracking-widest 
+                  className="relative inline-block leading-loose  
                     hover:text-[#F5F0E8] transition-colors duration-300
                     after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0
                     after:w-0 after:h-[.15vw] after:bg-[#FF5A1F] after:transition-all after:duration-300

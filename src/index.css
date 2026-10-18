@@ -16,6 +16,20 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "cursive";
+  src: url("./fonts/northwell-clean-alt.woff2") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "f1";
+  src: url("./fonts/Formula1-Black.woff2") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   --breakpoint-3xl: 120.0625rem;
@@ -25,6 +39,8 @@
   --font-bebas: 'Bebas Neue', 'Impact', sans-serif;
   --font-san: 'Inter', sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --font-curs: "cursive", sans-serif;
+  --font-f1: "f1", sans-serif;
 }
 
 
